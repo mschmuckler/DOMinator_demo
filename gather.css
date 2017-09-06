@@ -1,0 +1,109 @@
+body {
+  font-family: 'Convergence', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  margin: 0 auto 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#board-list {
+  background-color: lightgray;
+  margin-top: 20px;
+  min-height: 100px;
+  width: 100%;
+}
+
+#board-list li {
+  width: 225px;
+}
+
+#header-btns {
+  display: flex;
+}
+
+#header-btns button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.card {
+  width: 50px;
+  padding: 10px;
+  color: #8F908F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.card button {
+  color: black;
+  background-color: #D9D9D9;
+  border: none;
+}
+.card button:hover {
+  opacity: 0.7
+}
+
+.in-play:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.tapped {
+  transform: rotate(-90deg);
+}
+
+.R {
+  color: #FE8D8D;
+}
+.R button {
+  color: white;
+  background-color: #D50101;
+  border: none;
+}
+
+.U {
+  color: #9CA3FE;
+}
+.U button {
+  color: white;
+  background-color: #4F5BFD;
+  border: none;
+}
+
+.W {
+  color: #CED257;
+}
+.W button {
+  color: white;
+  background-color: #CED257;
+  border: none;
+}
+
+.B {
+  color: #52345B;
+}
+.B button {
+  color: white;
+  background-color: #52345B;
+  border: none;
+}
+
+.G {
+  color: #83D780;
+}
+.G button {
+  color: white;
+  background-color: #579F55;
+  border: none;
+}
