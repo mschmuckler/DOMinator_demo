@@ -123,6 +123,21 @@ ul {
   border: none;
 }
 
+#what-can-you-do {
+  font-size: 35px;
+  padding: 10px;
+}
+
+#DOMinator-href {
+  color: black;
+  text-decoration: none;
+}
+
+#github-logo {
+  height: 28px;
+  width: 28px;
+}
+
 .feature-list {
   width: 500px;
   height: 300px;

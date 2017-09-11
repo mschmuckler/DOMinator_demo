@@ -9,7 +9,11 @@
     <script type="text/javascript" src="./gather.js" ></script>
   </head>
   <body>
-    <h1 id="what-can-you-do" >What can you do with DOMinator? Hover over me to learn more about this demo</h1>
+    <h1 id="what-can-you-do" >What can you do with
+      <a href="https://github.com/mschmuckler/DOMinator" id="DOMinator-href">
+      D<img src="./github-logo-dom.png" id="github-logo" alt="github">Minator</a>?
+      Hover over me to learn more about this demo
+    </h1>
     <ul class="feature-list hidden" >
       <li>Draw a card - sends an AJAX request to external API for card data</li>
       <li>Play a card - Appends card from hand to play</li>
@@ -25,7 +29,6 @@
     <ul id="board-list" >
       <h2>In play</h2>
     </ul>
-    <h2>In hand</h2>
     <ul id="deck-list" >
     </ul>
   </body>
