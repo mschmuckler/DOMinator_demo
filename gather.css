@@ -1,12 +1,26 @@
 body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin: 0;
   font-family: 'Convergence', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(to right, #D4A6C3, orange, #D8D821);
 }
 
 button {
   cursor: pointer;
+  background: linear-gradient(to bottom, white, pink, orange, yellow);
+  border-radius: 5px;
+  color: white;
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.15);
 }
 
 ul {
@@ -17,10 +31,11 @@ ul {
 }
 
 #board-list {
-  background-color: lightgray;
   margin-top: 20px;
   min-height: 100px;
   width: 100%;
+  background-color: white;
+  color: black;
 }
 
 #board-list li {
@@ -47,7 +62,7 @@ ul {
 }
 .card button {
   color: black;
-  background-color: #D9D9D9;
+  background: #D9D9D9;
   border: none;
 }
 .card button:hover {
@@ -68,7 +83,7 @@ ul {
 }
 .R button {
   color: white;
-  background-color: #D50101;
+  background: #D50101;
   border: none;
 }
 
@@ -77,7 +92,7 @@ ul {
 }
 .U button {
   color: white;
-  background-color: #4F5BFD;
+  background: #4F5BFD;
   border: none;
 }
 
@@ -86,7 +101,7 @@ ul {
 }
 .W button {
   color: white;
-  background-color: #CED257;
+  background: #CED257;
   border: none;
 }
 
@@ -95,7 +110,7 @@ ul {
 }
 .B button {
   color: white;
-  background-color: #52345B;
+  background: #52345B;
   border: none;
 }
 
@@ -104,6 +119,22 @@ ul {
 }
 .G button {
   color: white;
-  background-color: #579F55;
+  background: #579F55;
   border: none;
+}
+
+.feature-list {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px;
+  list-style: none;
+  position: fixed;
+  top: 100px;
+}
+
+.hidden {
+  visibility: hidden;
 }

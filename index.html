@@ -2,14 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Root</title>
+    <title>Gather</title>
     <link rel="stylesheet" href="./gather.css">
     <link href="https://fonts.googleapis.com/css?family=Convergence" rel="stylesheet">
     <script type="text/javascript" src="./DOMinator.js" ></script>
     <script type="text/javascript" src="./gather.js" ></script>
   </head>
   <body>
-    <h1>Let's Gather</h1>
+    <h1 id="what-can-you-do" >What can you do with DOMinator? Hover over me to learn more about this demo</h1>
+    <ul class="feature-list hidden" >
+      <li>Draw a card - sends an AJAX request to external API for card data</li>
+      <li>Play a card - Appends card from hand to play</li>
+      <li>Discard/Destroy a card - Removes that element from the DOM</li>
+      <li>Tap a card - Toggles the 'tapped' class of a card in play</li>
+      <li>Destroy all cards - removes all '.card' elements</li>
+      <li>This mouseover event!</li>
+    </ul>
     <div id="header-btns" >
       <button type="button" id="add-card-btn" >Draw card</button>
       <button type="button" id="delete-all-btn" >Discard all</button>
@@ -17,8 +25,8 @@
     <ul id="board-list" >
       <h2>In play</h2>
     </ul>
+    <h2>In hand</h2>
     <ul id="deck-list" >
-      <h2>In hand</h2>
     </ul>
   </body>
 </html>

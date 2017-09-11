@@ -88,10 +88,11 @@ $l.extend = function(target, ...sources) {
 $l.ajax = function(options) {
   const defaults = {
       method: 'GET',
-      contentType: 'JSON',
+      url: null,
       data: null,
-      success(data) {
-        console.log(data);
+      contentType: 'JSON',
+      success(payload) {
+        console.log(payload);
       },
       error(error) {
         console.log(error);

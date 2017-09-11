@@ -35,6 +35,15 @@ const appendCardToDeck = (card) => {
 
 $l(() => {
 
+  const demoExplanation = $l("#what-can-you-do");
+  const featureList = $l(".feature-list");
+  demoExplanation.on("mouseover", () => {
+    featureList.removeClass("hidden");
+  });
+  demoExplanation.on("mouseleave", () => {
+    featureList.addClass("hidden");
+  });
+
   const addButton = $l("#add-card-btn");
   addButton.on("click", () => {
     $l.ajax({
@@ -46,7 +55,7 @@ $l(() => {
 
   const deleteAllButton = $l("#delete-all-btn");
   deleteAllButton.on("click", () => {
-    const allCards = $l("li");
+    const allCards = $l(".card");
     allCards.remove();
   });
 
